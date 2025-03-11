@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لماذا سأكون حبيب رائع؟</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            direction: rtl;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        h3 {
+            color: #777;
+            font-size: 14px;
+        }
+        .feature {
+            margin: 20px 0;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+            margin: 10px auto;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .yes {
+            background-color: green;
+            color: white;
+        }
+        .no {
+            background-color: red;
+            color: white;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- صفحة التحذير -->
+    <div id="warningPage">
+        <h1>⚠️ تحذير</h1>
+        <p>المحتوى في هذه الصفحة هو مجرد مزاح ولا يعبر عن شخصيات حقيقية.</p>
+        <p>إذا كنت ترغب في المتابعة، اضغط على الزر أدناه.</p>
+        <button onclick="enterSite()">موافق</button>
+    </div>
+
+    <!-- المحتوى الرئيسي (مخفي في البداية) -->
+    <div id="mainContent" class="hidden">
+        <h1>لماذا سأكون حبيب رائع؟</h1>
+
+        <div class="feature">
+            <h2>1. أنا مضحك</h2>
+            <img src="laughing-emoji-meme-2.jpg" alt="أنا مضحك">
+        </div>
+
+        <div class="feature">
+            <h2>2. نقدر نسمع لمشاكلك طول اليوم لان معنديش حياة</h2>
+            <img src="hearing-loss-in-one-ear-e1661411187426.webp" alt="أنا أستمع">
+        </div>
+
+        <div class="feature">
+            <h2>3. نعرف إنجليزي واو</h2>
+        </div>
+
+        <div class="feature">
+            <h2>4. جميل، و تعرفي لما جميل يكون مع جميلة الكون يمكن يتفجر</h2>
+            <img src="bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="أنا جميل">
+        </div>
+
+        <div class="feature">
+            <h2>5. متواجد 24 ساعة على الانترنت لاني مدمن لهذا نقدر نرد عليك وقتي</h2>
+        </div>
+
+        <h2>هل تقبلين؟؟؟</h2>
+
+        <div class="buttons">
+            <button class="yes" onclick="showMessage('yes')">نعم</button>
+            <button class="no" onclick="showMessage('no')">لا</button>
+        </div>
+
+        <p id="result"></p>
+
+        <!-- قسم اهتماماتي -->
+        <h1>اهتماماتي</h1>
+
+        <div class="feature">
+            <h2>1. القراءة</h2>
+            <p>(اني نكذب باش نبين روحي ذكي لكن حق مرة قريت رواية القس المحنون فيها الاف الصفحات)</p>
+        </div>
+
+        <div class="feature">
+            <h2>2. إدمان الإنترنت</h2>
+            <p>(أونلاين 24/7 حتى لو كان الانترنت ضعيف)</p>
+        </div>
+
+        <div class="feature">
+            <h2>3. أنتي</h2>
+            <p>(مش لازم نشرح )</p>
+        </div>
+
+        <div class="feature">
+            <h2>4. نحب نعرف معلومات على كل شي</h2>
+            <p>(يعني لو تسئلي على اي شي نعطيك نبذة بسيطة)</p>
+        </div>
+
+        <div class="feature">
+            <h2>5. الباقي بعدين إذا وافقتي</h2>
+        </div>
+
+        <h3>صح ان الموقع يبان انه ضعيف هلبا و خردة لكن قعدت عليه ساعات</h3>
+    </div>
+
+    <script>
+        function enterSite() {
+            document.getElementById('warningPage').style.display = 'none';
+            document.getElementById('mainContent').classList.remove('hidden');
+        }
+
+        function showMessage(choice) {
+            if (choice === 'yes') {
+                document.getElementById('result').innerHTML = "انك اخترتي افضل خيار في حياتك، حسابي في انستا ya37mar";
+            } else {
+                document.getElementById('result').innerHTML = "اسف لاني لم البي معاييرك";
+            }
+        }
+    </script>
+
+</body>
+</html>
